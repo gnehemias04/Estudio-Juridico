@@ -1,9 +1,72 @@
 import React from "react";
 
 export default function AboutUs() {
+  const team = [
+    {
+      name: "Doctora Juana Martinez",
+      img: "/Juana Martinez.png",
+      contact:
+        "https://www.linkedin.com/in/gabriel-nehemias-rengifo-krunfli-14aa7a36b/",
+      position: "Abogada Fundadora",
+    },
+    {
+      name: "Doctor Juana Martinez",
+      img: "/Diego Lorenzetti.png",
+      contact:
+        "https://www.linkedin.com/in/gabriel-nehemias-rengifo-krunfli-14aa7a36b/",
+      position: "Abogado Co-Fundador",
+    },
+    {
+      name: "Martin Godoy",
+      img: "/Martin Godoy.png",
+      contact:
+        "https://www.linkedin.com/in/gabriel-nehemias-rengifo-krunfli-14aa7a36b/",
+      position: "Asistente Legal",
+    },
+    {
+      name: "Ariela Flores",
+      img: "/Ariela Flores.png",
+      contact:
+        "https://www.linkedin.com/in/gabriel-nehemias-rengifo-krunfli-14aa7a36b/",
+      position: "Administrativa",
+    },
+  ];
+
   return (
-    <section className="about-us md:flex w-full p-4 h-[100vh] bg-black">
-      <div className="flex flex-col justify-center items-center md:w-[50%]">
+    <section id="about-us" className="about-us grid gap-4 w-full py-5 bg-black">
+      <div className="grid justify-center">
+        <h2 className="text-gray-200 font-bold text-3xl md:text-4xl text-center">
+          Conoce a nuestro Equipo
+        </h2>
+        <p className="max-w-200 font-semibold md:text-lg text-gray-200 text-center ">
+          En <u>Estudio Martinez</u> nos dedicamos a brindar asesoramiento legal
+          personalizado y soluciones efectivas en diversas áreas del derecho.
+          Nuestro compromiso es acompañar a cada cliente con transparencia,
+          ética y experiencia, garantizando un servicio confiable y de calidad.
+        </p>
+      </div>
+      <div className="w-full flex flex-wrap justify-center gap-4">
+        {team.map((e) => (
+          <div
+            key={e.name}
+            className=" w-50 lg:w-80 border border-gray-700 rounded-lg shadow-sm "
+          >
+            <a href={e.contact}>
+              <img className="rounded-t-lg" src={e.img} alt={e.name} />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-200">
+                  {e.name}
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-200">{e.position}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* <div className="flex flex-col justify-center items-center md:w-[50%]">
         <img
           className="h-64 w-64 md:h-72 md:w-72 lg:h-96 lg:w-96 rounded-full"
           src="/public/flex items-center justify-center w-full h-[90vh].png"
@@ -40,7 +103,7 @@ export default function AboutUs() {
         transparencia y la atención personalizada, buscando siempre la mejor
         estrategia para cada caso. Actualmente formo parte del Estudio Jurídico
         López & Asociados en Buenos Aires.
-      </p>
+      </p> */}
     </section>
   );
 }
