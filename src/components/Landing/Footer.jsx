@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="FlowBite Logo"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-200">
-                Estudio Juridico Martinez
+                Estudio Martinez
               </span>
             </div>
           </div>

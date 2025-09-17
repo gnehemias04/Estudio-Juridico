@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router";
 
-export default function Header() {
+export default function Header({ on, setOn }) {
   return (
     <header
       id="home"
@@ -19,8 +20,14 @@ export default function Header() {
         <a href="#contact">
           <li className="hidden sm:flex  hover:text-white">Contacto</li>
         </a>
-        <li className="">Portal</li>
-        <li className="sm:hidden border border-white rounded-sm">
+
+        <li className="">
+          <Link to={"/Login"}> Portal</Link>
+        </li>
+        <li
+          onClick={() => setOn(!on)}
+          className="sm:hidden border border-white rounded-sm"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
