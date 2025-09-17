@@ -45,11 +45,11 @@ export default function AboutUs() {
           ética y experiencia, garantizando un servicio confiable y de calidad.
         </p>
       </div>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 place-items-center">
+      <div className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 place-items-center">
         {team.map((e) => (
           <div
             key={e.name}
-            className=" w-38 sm:w-50  lg:w-60 xl:w-70 h-[100%] border border-gray-700 rounded-lg shadow-sm "
+            className=" w-38 sm:w-55 md:w-45 lg:w-60 xl:w-70 h-[100%] border border-gray-700 rounded-lg shadow-sm "
           >
             <a href={e.contact}>
               <img className="rounded-t-lg" src={e.img} alt={e.name} />

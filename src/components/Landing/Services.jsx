@@ -56,11 +56,11 @@ export default function Services() {
       <h2 className="text-gray-200 text-center text-3xl lg:text-4xl font-bold p-4">
         Areas de Trabajo
       </h2>
-      <div className="w-full flex flex-wrap justify-center gap-4 ">
+      <div className=" flex  gap-4 overflow-x-scroll md:flex-wrap md:justify-center">
         {services.map((e) => (
           <div key={e.name}>
             {" "}
-            <div className="max-w-sm bg-black/80 border rounded-lg shadow-sm border-gray-700">
+            <div className="w-75 md:w-90 h-[100%] bg-black/80 border rounded-lg shadow-sm border-gray-700">
               <img className="rounded-t-lg" src={e.img} alt={e.name} />
 
               <div className="p-5">
