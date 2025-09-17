@@ -58,7 +58,7 @@ export default function Services() {
       </h2>
       <div className="w-full flex flex-wrap justify-center gap-4 ">
         {services.map((e) => (
-          <>
+          <div key={e.name}>
             {" "}
             <div className="max-w-sm bg-black/80 border rounded-lg shadow-sm border-gray-700">
               <img className="rounded-t-lg" src={e.img} alt={e.name} />
@@ -94,7 +94,7 @@ export default function Services() {
                 </a>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </section>
