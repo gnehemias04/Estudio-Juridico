@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <div className="flex">
               <img
-                src="/public/image-Photoroom (1).png"
+                src="/image-Photoroom (1).png"
                 className="h-10 md:h-15 me-3"
                 alt="FlowBite Logo"
               />
@@ -66,12 +66,6 @@ export default function Footer() {
                     Facebook
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  ></a>
-                </li>
               </ul>
             </div>
           </div>
@@ -87,15 +81,6 @@ export default function Footer() {
               <br /> Desarrollado por Gabriel Rengifo
             </a>
           </span>
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0334450666165!2d-58.38583382400056!3d-34.782171868771214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327fc36df7c49%3A0x9f2a7ee7c1b84a56!2sHip%C3%B3lito%20Yrigoyen%2024273%2C%20Guernica%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1726500753927!5m2!1ses!2sar"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> */}
         </div>
       </div>
     </footer>

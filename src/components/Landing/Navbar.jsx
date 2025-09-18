@@ -15,7 +15,7 @@ export default function Navbar({ on, setOn }) {
               <li className="flex">
                 <img
                   className="w-20"
-                  src="/public/image-Photoroom (1).png"
+                  src="/image-Photoroom (1).png"
                   alt="logo"
                 />
                 <span className="ms-3">Estudio Martinez</span>
